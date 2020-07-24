@@ -13,6 +13,8 @@ import logo from '../../assets/logo.svg';
 
 const Points = () => {
 
+    const valor = 's';
+
     const [initialPosition, setInitialPosition] = useState<[number, number]>([0, 0]);
 
 
