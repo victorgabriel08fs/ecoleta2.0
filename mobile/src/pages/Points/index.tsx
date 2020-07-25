@@ -10,6 +10,8 @@ import * as Location from 'expo-location';
 
 import api from '../../services/api';
 
+
+
 interface Params {
     uf: string;
     city: string;
