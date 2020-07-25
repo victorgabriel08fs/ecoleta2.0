@@ -34,11 +34,9 @@ const Home = () => {
         setCity(selectedCity);
 
         if (uf === '' || uf === '0' || city === '' || city === '0') {
-            console.log('Foi não...');
             
 
         } else {
-            console.log('1', uf, city);
             navigation.navigate('Points', {
                 uf,
                 city,

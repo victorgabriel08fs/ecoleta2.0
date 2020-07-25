@@ -45,7 +45,7 @@ const Detail = () => {
     }
 
     function handleWhatsapp() {
-        Linking.openURL(`whatsapp://send?phone=${data.point.whatsapp}`);
+        Linking.openURL(`whatsapp://send?phone=+55${data.point.whatsapp}`);
     }
 
     function handleMail() {

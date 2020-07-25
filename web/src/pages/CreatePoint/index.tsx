@@ -102,7 +102,6 @@ const CreatePoint = () => {
     function handleInputChange(event: ChangeEvent<HTMLInputElement>) {
         const { name, value } = event.target;
         setFormData({ ...formData, [name]: value });
-        console.log(formData);
     }
 
 

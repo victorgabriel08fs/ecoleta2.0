@@ -13,6 +13,6 @@ routes.get('/items', itemsController.index);
 
 routes.post('/points', pointsController.create);
 routes.get('/points/:id',pointsController.show);
-routes.get('/points',pointsController.index);
+routes.get('/filtered-points',pointsController.filtered);
 
 export default routes;

@@ -68,7 +68,7 @@ class PointsController {
         return response.json({ point, items });
     }
 
-    async index(request: Request, response: Response) {
+    async filtered(request: Request, response: Response) {
 
         const { city, uf, items } = request.query;
 

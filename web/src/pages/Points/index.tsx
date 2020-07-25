@@ -13,7 +13,6 @@ import logo from '../../assets/logo.svg';
 
 const Points = () => {
 
-    const valor = 's';
 
     const [initialPosition, setInitialPosition] = useState<[number, number]>([0, 0]);
 
@@ -40,11 +39,22 @@ const Points = () => {
 
             <form >
                 <h1>Encontre pontos de coleta<br />próximos a você.</h1>
+
                 <fieldset>
+
                     <legend>
                         <h2>Pontos de coleta</h2>
                     </legend>
-
+                    <div>
+                        <div className="field-group">
+                            <select className="uf">
+                                <option>UF</option>
+                            </select>
+                        </div>
+                        <select className="city">
+                            <option>Cidade</option>
+                        </select>
+                    </div>
                     <Map center={initialPosition} zoom={14} >
                         <TileLayer
                             attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
